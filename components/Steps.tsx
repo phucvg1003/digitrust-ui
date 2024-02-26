@@ -4,7 +4,7 @@ import Button from "./Button";
 
 export default function Steps() {
     return (
-        <section className="pb-80">
+        <section className="xl:pb-[20rem] 2xl:pb-[50rem]">
             <div className="relative space-y-20 px-[60px] py-[200px] xl:px-[120px]">
                 <Image
                     className="absolute left-[50%] top-1/2 -z-50 w-[100%] -translate-x-1/2 -translate-y-[10%] object-cover px-[60px] pr-52 xl:px-[120px] xl:pr-64"
@@ -13,7 +13,7 @@ export default function Steps() {
                 ></Image>
 
                 <div>
-                    <div className="absolute left-[25%] top-full -translate-x-1/2 -translate-y-[35%] md:-translate-y-[40%] xl:-translate-y-5">
+                    <div className="absolute left-[25%] top-full -translate-x-1/2 -translate-y-[35%] md:-translate-y-[40%] xl:-translate-y-5 2xl:xl:translate-y-[20rem]">
                         <div className="relative w-[279px] space-y-6">
                             <div className="absolute left-0 top-0 translate-x-[300%] text-[150px] font-semibold leading-[204px] -tracking-[4.08px] text-gray-800/5 xl:text-[204px]">
                                 1

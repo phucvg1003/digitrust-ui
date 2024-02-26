@@ -12,7 +12,7 @@ export default function DrivenPortfolio() {
                 AI-Driven Portfolio
             </h1>
             {/* Account abtraction */}
-            <div className="flex items-center gap-x-5 px-[60px] py-10 xl:px-[120px] 2xl:px-[550px]">
+            <div className="flex items-center gap-x-5 py-10 2xl:container xl:px-[120px] 2xl:mx-auto">
                 <div className="max-w-sm space-y-10 xl:max-w-lg">
                     <h1 className="text-4xl font-bold uppercase leading-[130%] text-blue-600">
                         ACCOUNT ABSTRACTION
@@ -43,35 +43,37 @@ export default function DrivenPortfolio() {
             </div>
 
             {/* MULTI-SIGNATURE VAULTS */}
-            <div className="flex items-center gap-x-5 bg-blue-50 px-[60px] py-10 xl:px-[120px] 2xl:px-[550px]">
-                <Image
-                    className="mr-auto"
-                    src={multiSignatureVaults}
-                    alt="multiSignatureVaults"
-                ></Image>
+            <div className="bg-blue-50 py-10 xl:px-[120px]">
+                <div className="flex items-center gap-x-5 2xl:container 2xl:mx-auto 2xl:px-0">
+                    <Image
+                        className="mr-auto"
+                        src={multiSignatureVaults}
+                        alt="multiSignatureVaults"
+                    ></Image>
 
-                <div className="-mt-24 max-w-sm space-y-10 xl:max-w-lg">
-                    <h1 className="text-4xl font-bold uppercase leading-[130%] text-blue-600">
-                        MULTI-SIGNATURE VAULTS
-                    </h1>
+                    <div className="-mt-24 max-w-sm space-y-10 xl:max-w-lg">
+                        <h1 className="text-4xl font-bold uppercase leading-[130%] text-blue-600">
+                            MULTI-SIGNATURE VAULTS
+                        </h1>
 
-                    <div className="space-y-9 text-base font-normal leading-normal text-gray-600">
-                        <p>
-                            <span className="font-bold">
-                                User-Controlled Security:
-                            </span>
-                            Multi-signature vaults empower users with
-                            unprecedented control over the security of their
-                            digital assets.
-                        </p>
+                        <div className="space-y-9 text-base font-normal leading-normal text-gray-600">
+                            <p>
+                                <span className="font-bold">
+                                    User-Controlled Security:
+                                </span>
+                                Multi-signature vaults empower users with
+                                unprecedented control over the security of their
+                                digital assets.
+                            </p>
 
-                        <p>
-                            <span className="font-bold">
-                                ACustomizable Signature Requirements:
-                            </span>
-                            Users can choose the number of signatures required
-                            to authorize a transaction.
-                        </p>
+                            <p>
+                                <span className="font-bold">
+                                    ACustomizable Signature Requirements:
+                                </span>
+                                Users can choose the number of signatures
+                                required to authorize a transaction.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -84,7 +86,7 @@ export default function DrivenPortfolio() {
                     alt="rectangleBlue"
                 ></Image>
 
-                <div className="relative z-50 flex items-center gap-x-5 px-[60px] py-10 xl:px-[120px] 2xl:px-[550px]">
+                <div className="gap-x-5py-10 relative z-50 flex items-center px-20 2xl:container 2xl:mx-auto 2xl:px-0">
                     <div className="-mt-24 max-w-sm space-y-10 xl:max-w-lg">
                         <h1 className="text-4xl font-bold uppercase leading-[130%] text-blue-600">
                             AI-DRIVEN INVESTMENT RECOMMENDATIONS
@@ -120,21 +122,21 @@ export default function DrivenPortfolio() {
             </div>
 
             {/* AI-DRIVEN INVESTMENT RECOMMENDATIONS */}
-            <div className="relative overflow-hidden pt-10">
+            <div className="relative overflow-hidden">
                 <Image
-                    className="absolute left-[35%] top-1/2 -translate-x-1/2 -translate-y-[40%] object-cover"
+                    className="absolute left-[35%] top-1/2 -translate-x-1/2 -translate-y-[50%] object-cover"
                     src={rectangleBlueRight}
                     alt="rectangleBlueRight"
                 ></Image>
 
-                <div className="relative h-full">
-                    <div className="relative z-50 flex items-center gap-x-5 px-[60px] py-10 xl:px-[120px] 2xl:px-[550px]">
+                <div className="relative h-full py-10">
+                    <div className="relative z-50 flex items-center gap-x-5 px-20 2xl:container 2xl:mx-auto 2xl:px-0">
                         <Image
                             className="mr-auto"
                             src={aiVerify}
                             alt="aiVerify"
                         ></Image>
-                        <div className="-mt-24 max-w-sm space-y-10 xl:max-w-lg">
+                        <div className="-mt-24 max-w-sm space-y-10 py-10 xl:max-w-lg">
                             <h1 className="text-4xl font-bold uppercase leading-[130%] text-blue-600">
                                 AI-VERIFIED AUDIT FOR SMART CONTRACTS
                             </h1>
@@ -161,7 +163,7 @@ export default function DrivenPortfolio() {
                         </div>
                     </div>
 
-                    <div className="relative z-50 flex items-center gap-x-5 px-[60px] pb-32 xl:px-[120px] 2xl:px-[550px]">
+                    <div className="relative z-50 flex items-center gap-x-5 px-20 2xl:container 2xl:mx-auto 2xl:px-0">
                         <div className="-mt-24 max-w-sm space-y-10 xl:max-w-lg">
                             <h1 className="text-4xl font-bold uppercase leading-[130%] text-blue-600">
                                 PREDICTIVE YIELD FARMING STRATEGIES
