@@ -1,6 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
 import ApexCharts from "apexcharts";
+import Image from "next/image";
+import Bitcoind from "../public/assets/images/bitcoin.png";
 
 export default function MorePools() {
     // Call Api
@@ -121,7 +123,24 @@ export default function MorePools() {
                     {dataMorePools.map((data: any) => (
                         <div key={data.vault_id}>
                             <div className="space-y-2 rounded-[10px] border border-gray-45 px-3 py-4 shadow-cardMorePools">
-                                <div>
+                                <div className="flex justify-between border-b border-gray-300 pb-2">
+                                    <Image
+                                        className="h-auto w-[50px]"
+                                        src={Bitcoind}
+                                        alt={"bitcoind"}
+                                    ></Image>
+                                    <div>
+                                        <p className="text-right text-xs text-gray-500">
+                                            Price
+                                        </p>
+                                        <div className="text-right text-2xl font-semibold text-gray-800">
+                                            <span>$</span>
+                                            {data.return}
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="pt-3">
                                     <div className="text-base font-semibold leading-7 text-[#2563EB]">
                                         {data.vault_name}
                                     </div>
