@@ -120,7 +120,7 @@ export default function Details() {
 
     return (
         <main>
-            <section className="bg-details bg-blue-50 bg-no-repeat object-cover">
+            <section className="lg:bg-details bg-blue-50 xl:object-contain 2xl:bg-none">
                 <div className="container mx-auto py-24">
                     <div className="space-y-6">
                         <div className="flex items-center gap-x-6">
