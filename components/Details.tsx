@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import ApexCharts from "apexcharts";
-import Logo from "../public/assets/images/logo.png";
+// import Logo from "../public/assets/images/logo.png";
 import MorePools from "./MorePools";
 
 export default function Details() {
