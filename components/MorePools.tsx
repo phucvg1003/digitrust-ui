@@ -160,8 +160,10 @@ export default function MorePools() {
                                     </div>
 
                                     <div>
-                                        <div className="flex items-center text-xl font-medium text-gray-800">
-                                            <p>{data.monthly_return}</p>
+                                        <div className="flex items-center text-xl font-medium">
+                                            <p className="text-green-500">
+                                                {data.monthly_return}
+                                            </p>
                                         </div>
                                         <div className=" text-xs font-normal leading-[160%] text-gray-500">
                                             MONTHLY
@@ -169,8 +171,10 @@ export default function MorePools() {
                                     </div>
 
                                     <div>
-                                        <div className="flex items-center text-xl font-medium text-gray-800">
-                                            <p>{data.daily_return}</p>
+                                        <div className="flex items-center text-xl font-medium">
+                                            <p className="text-red-500">
+                                                {data.daily_return}
+                                            </p>
                                         </div>
                                         <div className=" text-xs font-normal leading-[160%] text-gray-500">
                                             24H
