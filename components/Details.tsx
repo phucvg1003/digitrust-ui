@@ -7,7 +7,7 @@ import MorePools from "./MorePools";
 
 export default function Details() {
     // Call Api
-    const [dataDetails, setDataDetails] = useState([]);
+    const [dataDetails, setDataDetails] = useState<any[]>([]);
 
     useEffect(() => {
         const fetchDataDetails = async () => {
@@ -120,7 +120,7 @@ export default function Details() {
 
     return (
         <main>
-            <section className="lg:bg-details bg-blue-50 xl:object-contain 2xl:bg-none">
+            <section className="bg-blue-50 lg:bg-details xl:object-contain 2xl:bg-none">
                 <div className="container mx-auto py-24">
                     <div className="space-y-6">
                         <div className="flex items-center gap-x-6">
@@ -160,19 +160,28 @@ export default function Details() {
                             </div>
                         </div>
                         <div className="flex items-center gap-x-3">
-                            <div className="flex rounded-full border border-gray-45 bg-blue-600 px-[10px] py-1 text-base font-medium leading-6 text-white shadow-currency">
+                            {dataDetails.map((data) => (
+                                <div className="flex rounded-full border border-gray-45 bg-blue-600 px-[10px] py-1 text-base font-medium leading-6 text-white shadow-currency">
+                                    <span>{data.currency}</span>
+                                    aHYPE
+                                </div>
+                            ))}
+                            {/* <div className="flex rounded-full border border-gray-45 bg-blue-600 px-[10px] py-1 text-base font-medium leading-6 text-white shadow-currency">
                                 {dataDetails && (
                                     <span>{dataDetails.currency}</span>
                                 )}
                                 aHYPE
-                            </div>
+                            </div> */}
                             <div className="rounded-full border border-blue-600 bg-indigo-100 px-[10px] py-1 text-base font-medium leading-6 text-gray-800 shadow-elevation">
                                 Live on Avalanche
                             </div>
                         </div>
-                        <p className="font-feature-settings max-w-5xl text-base font-normal text-gray-800">
-                            {dataDetails && <p>{dataDetails.vault_desc}</p>}
-                        </p>
+
+                        {dataDetails.map((data) => (
+                            <p className="font-feature-settings max-w-5xl text-base font-normal text-gray-800">
+                                {data.vault_desc}
+                            </p>
+                        ))}
 
                         <div className="flex gap-x-3">
                             <div className="flex items-center gap-x-2 rounded-[10px] border border-gray-45 bg-white px-4 py-3">
@@ -180,14 +189,12 @@ export default function Details() {
                                     <p className="uppercase text-blue-600">
                                         MY BALANCE
                                     </p>
-                                    <div className="flex text-gray-800">
-                                        {dataDetails && (
-                                            <span>{dataDetails.currency}</span>
-                                        )}
-                                        {dataDetails && (
-                                            <p>{dataDetails.price}</p>
-                                        )}
-                                    </div>
+                                    {dataDetails.map((data) => (
+                                        <div className="flex text-gray-800">
+                                            <span>{data.currency}</span>
+                                            <p>{data.price}</p>
+                                        </div>
+                                    ))}
                                 </div>
 
                                 <button>
@@ -225,14 +232,12 @@ export default function Details() {
                                     <p className="uppercase text-blue-600">
                                         STAKED
                                     </p>
-                                    <div className="flex text-gray-800">
-                                        {dataDetails && (
-                                            <span>{dataDetails.currency}</span>
-                                        )}
-                                        {dataDetails && (
-                                            <p>{dataDetails.tvl}</p>
-                                        )}
-                                    </div>
+                                    {dataDetails.map((data) => (
+                                        <div className="flex text-gray-800">
+                                            <span>{data.currency}</span>
+                                            <p>{data.tvl}</p>
+                                        </div>
+                                    ))}
                                 </div>
 
                                 <button>
@@ -446,56 +451,48 @@ export default function Details() {
                                     <div className="text-base font-medium leading-7 text-gray-800">
                                         Price
                                     </div>
-                                    <div className="flex items-center text-3xl font-semibold leading-7 text-gray-800">
-                                        {dataDetails && (
-                                            <span>{dataDetails.currency}</span>
-                                        )}
-                                        {dataDetails && (
-                                            <p>{dataDetails.price}</p>
-                                        )}
-                                    </div>
+                                    {dataDetails.map((data) => (
+                                        <div className="flex items-center text-3xl font-semibold leading-7 text-gray-800">
+                                            <span>{data.currency}</span>
+                                            <p>{data.price}</p>
+                                        </div>
+                                    ))}
                                 </div>
 
                                 <div className="space-y-3 rounded-xl border border-gray-45 bg-white px-6 py-4 backdrop-blur-lg">
                                     <div className="text-base font-medium leading-7 text-gray-800">
                                         TVL
                                     </div>
-                                    <div className="flex items-center text-3xl font-semibold leading-7 text-gray-800">
-                                        {dataDetails && (
-                                            <span>{dataDetails.currency}</span>
-                                        )}
-                                        {dataDetails && (
-                                            <p>{dataDetails.tvl}</p>
-                                        )}
-                                    </div>
+                                    {dataDetails.map((data) => (
+                                        <div className="flex items-center text-3xl font-semibold leading-7 text-gray-800">
+                                            <span>{data.currency}</span>
+                                            <p>{data.tvl}</p>
+                                        </div>
+                                    ))}
                                 </div>
 
                                 <div className="space-y-3 rounded-xl border border-gray-45 bg-white px-6 py-4 backdrop-blur-lg">
                                     <div className="text-base font-medium leading-7 text-gray-800">
                                         Volume
                                     </div>
-                                    <div className="flex items-center text-3xl font-semibold leading-7 text-gray-800">
-                                        {dataDetails && (
-                                            <span>{dataDetails.currency}</span>
-                                        )}
-                                        {dataDetails && (
-                                            <p>{dataDetails.volume}</p>
-                                        )}
-                                    </div>
+                                    {dataDetails.map((data) => (
+                                        <div className="flex items-center text-3xl font-semibold leading-7 text-gray-800">
+                                            <span>{data.currency}</span>
+                                            <p>{data.volume}</p>
+                                        </div>
+                                    ))}
                                 </div>
 
                                 <div className="space-y-3 rounded-xl border border-gray-45 bg-white px-6 py-4 backdrop-blur-lg">
                                     <div className="text-base font-medium leading-7 text-gray-800">
                                         Return
                                     </div>
-                                    <div className="flex items-center text-3xl font-semibold leading-7 text-gray-800">
-                                        {dataDetails && (
-                                            <span>{dataDetails.currency}</span>
-                                        )}
-                                        {dataDetails && (
-                                            <p>{dataDetails.return}</p>
-                                        )}
-                                    </div>
+                                    {dataDetails.map((data) => (
+                                        <div className="flex items-center text-3xl font-semibold leading-7 text-gray-800">
+                                            <span>{data.currency}</span>
+                                            <p>{data.return}</p>
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
 
@@ -504,16 +501,12 @@ export default function Details() {
                                 {/* Information */}
                                 <div className="flex items-center justify-between px-8">
                                     <div className="space-y-2">
-                                        <div className="flex text-2xl font-semibold text-gray-800">
-                                            {dataDetails && (
-                                                <span>
-                                                    {dataDetails.currency}
-                                                </span>
-                                            )}
-                                            {dataDetails && (
-                                                <p>{dataDetails.price}</p>
-                                            )}
-                                        </div>
+                                        {dataDetails.map((data) => (
+                                            <div className="flex text-2xl font-semibold text-gray-800">
+                                                <span>{data.currency}</span>
+                                                <p>{data.price}</p>
+                                            </div>
+                                        ))}
 
                                         <div className=" text-xs tracking-wider text-gray-800">
                                             16:00 - 9 Dec, 2023
@@ -836,7 +829,7 @@ export default function Details() {
                                         </div>
                                     </div>
 
-                                    <button className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg border border-gray-300 bg-white p-[11px]">
+                                    <button className="absolute left-1/2 top-1/2 z-50 -translate-x-1/2 -translate-y-1/2 rounded-lg border border-gray-300 bg-white p-[11px]">
                                         <svg
                                             width="18"
                                             height="18"
