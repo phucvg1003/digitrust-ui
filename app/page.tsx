@@ -3,7 +3,6 @@ import Banner from "@/components/Banner";
 import DrivenPortfolio from "@/components/DrivenPortfolio";
 import Feature from "@/components/Feature";
 import Layout from "@/components/Layout";
-import MorePools from "@/components/MorePools";
 import Newsletter from "@/components/Newsletter";
 import Questions from "@/components/Questions";
 import Steps from "@/components/Steps";

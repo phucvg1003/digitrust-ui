@@ -18,17 +18,17 @@ export default function Header() {
                             ></Image>
                         </Link>
                     </div>
-                    
+
                     {/* Navigations */}
                     <nav className="hidden lg:block">
                         <ul className="flex gap-x-10">
                             {[
-                                ["Product", "/"],
-                                ["Community", "/"],
-                                ["Resources", "/"],
-                                ["About Us", "/"],
-                            ].map(([title, url]) => (
-                                <li>
+                                ["1", "Product", "/"],
+                                ["2", "Community", "/"],
+                                ["3", "Resources", "/"],
+                                ["4", "About Us", "/"],
+                            ].map(([id, title, url]) => (
+                                <li key={id}>
                                     <Link
                                         className="hover:text-blue-600"
                                         href={url}
