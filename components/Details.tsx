@@ -3,6 +3,9 @@ import { useEffect, useState } from "react";
 import ApexCharts from "apexcharts";
 import { Tab } from "@headlessui/react";
 import { Fragment } from "react";
+import dynamic from "next/dynamic";
+
+const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
 export default function Details() {
     // Call Api
@@ -24,14 +27,17 @@ export default function Details() {
     // End call api
 
     // Chart
+
     const [chartOptions, setchartOptions] = useState({
         chart: {
             type: "line",
             toolbar: {
                 show: false,
             },
-            zoom: {
-                enabled: false,
+            tools: {
+                zoom: {
+                    enabled: false,
+                },
             },
         },
 
@@ -48,16 +54,15 @@ export default function Details() {
 
         xaxis: {
             categories: ["Dec 5", "Dec 6", "Dec 7", "Dec 8", "Dec 9"],
+            lines: {
+                show: false,
+            },
             labels: {
                 show: true,
                 style: {
                     fontSize: "16px",
                     fontWeight: 500,
                 },
-            },
-
-            gridLines: {
-                show: true,
             },
         },
 
@@ -70,11 +75,11 @@ export default function Details() {
                 },
             },
 
-            stepSize: 1000,
-
-            gridLines: {
-                show: true,
+            lines: {
+                show: false,
             },
+
+            stepSize: 1000,
         },
 
         grid: {
@@ -93,28 +98,20 @@ export default function Details() {
         },
 
         colors: ["#4F46E5"],
-
-        // fill: {
-        //     type: "gradient",
-        //     gradient: {
-        //         shadeIntensity: 1,
-        //         opacityFrom: 0.25,
-        //         opacityTo: 0.9,
-        //         stops: [0, 100],
-        //     },
-        // },
     });
 
     useEffect(() => {
-        const chart = new ApexCharts(
+        const chartDetails = new ApexCharts(
             document.querySelector("#line-chart"),
             chartOptions,
         );
-        chart.render();
+
+        chartDetails.render();
         return () => {
-            chart.destroy();
+            chartDetails.destroy();
         };
     }, []);
+
     // End chart
 
     return (

@@ -1,4 +1,5 @@
 // import Image from "next/image";
+"use client";
 import Banner from "@/components/Banner";
 import DrivenPortfolio from "@/components/DrivenPortfolio";
 import Feature from "@/components/Feature";

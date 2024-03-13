@@ -95,18 +95,18 @@ export default function MorePools() {
     });
 
     useEffect(() => {
-        let charts: any = [];
+        const chartMorePool: any = [];
         dataMorePools.map((data: any) => {
             const chart: any = new ApexCharts(
                 document.querySelector(`.line-chart-${data.vault_id}`),
                 chartOptions,
             );
             chart.render();
-            charts.push(chart);
+            chartMorePool.push(chart);
         });
 
         return () => {
-            charts.forEach((chart: any) => {
+            chartMorePool.forEach((chart: any) => {
                 chart.destroy();
             });
         };
