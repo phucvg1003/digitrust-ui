@@ -1,8 +1,6 @@
 "use client";
-import ApexChart from "@/components/ApexChartjs";
-import Layout from "@/components/Layout";
-import ApexCharts from "apexcharts";
 import dynamic from "next/dynamic";
+import LayoutSecond from "@/components/LayoutSecond";
 
 const Detail = dynamic(() => import("@/components/Details"), { ssr: false });
 const MorePools = dynamic(() => import("@/components/MorePools"), {
@@ -11,9 +9,9 @@ const MorePools = dynamic(() => import("@/components/MorePools"), {
 
 export default function Details() {
     return (
-        <Layout>
+        <LayoutSecond>
             <Detail></Detail>
             <MorePools></MorePools>
-        </Layout>
+        </LayoutSecond>
     );
 }

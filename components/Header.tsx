@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../public/assets/images/logo.png";
@@ -5,8 +6,8 @@ import Button from "./Button";
 
 export default function Header() {
     return (
-        <header className="font-feature-settings bg-white text-sm font-medium capitalize leading-normal xl:text-base">
-            <div className="py-[18px] xl:container lg:px-16 xl:mx-auto xl:px-0">
+        <header className="font-feature-settings text-sm font-medium capitalize leading-normal xl:text-base">
+            <div className="container mx-auto py-[18px] xl:px-0">
                 <div className="flex items-center">
                     {/* Logo */}
                     <div className="flex flex-1 justify-start">
@@ -29,12 +30,7 @@ export default function Header() {
                                 ["4", "About Us", "/"],
                             ].map(([id, title, url]) => (
                                 <li key={id}>
-                                    <Link
-                                        className="hover:text-blue-600"
-                                        href={url}
-                                    >
-                                        {title}
-                                    </Link>
+                                    <Link href={url}>{title}</Link>
                                 </li>
                             ))}
                         </ul>

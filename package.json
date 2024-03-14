@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint"
   },
+  
   "dependencies": {
     "@headlessui/react": "^1.7.18",
     "@next-tools/dynamic": "^0.0.11",
@@ -17,7 +18,7 @@
     "react": "^18",
     "react-apexcharts": "^1.4.1",
     "react-dom": "^18"
-  },
+    },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@types/node": "^20",
