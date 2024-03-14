@@ -827,6 +827,90 @@ export default function Details() {
                                                     </svg>
                                                 </button>
                                             </div>
+
+                                            <div className="mt-8">
+                                                <div className="space-y-4">
+                                                    <div className="mt-5 flex items-center justify-between rounded-xl border border-gray-300 bg-white px-5 py-3">
+                                                        <div className="flex items-center gap-x-2 font-medium leading-6 text-gray-900 lg:text-sm">
+                                                            <span>
+                                                                <svg
+                                                                    width="18"
+                                                                    height="18"
+                                                                    viewBox="0 0 18 18"
+                                                                    fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                >
+                                                                    <path
+                                                                        fillRule="evenodd"
+                                                                        clipRule="evenodd"
+                                                                        d="M16.5 9C16.5 13.1421 13.1421 16.5 9 16.5C4.85786 16.5 1.5 13.1421 1.5 9C1.5 4.85786 4.85786 1.5 9 1.5C13.1421 1.5 16.5 4.85786 16.5 9ZM8.25 6.75V5.25H9.75V6.75H8.25ZM8.25 12.75V8.25H9.75V12.75H8.25Z"
+                                                                        fill="#0D121F"
+                                                                    />
+                                                                </svg>
+                                                            </span>
+                                                            1 USDT = 1.00021 USDC
+                                                        </div>
+                                                        <button className="flex items-center gap-x-1.5 font-medium leading-6 text-gray-900 lg:text-sm">
+                                                            Advanced Setting
+                                                            <span>
+                                                                <svg
+                                                                    width="12"
+                                                                    height="12"
+                                                                    viewBox="0 0 12 12"
+                                                                    fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                >
+                                                                    <path
+                                                                        fillRule="evenodd"
+                                                                        clipRule="evenodd"
+                                                                        d="M6.00005 8.32582L2.55811 4.88388L3.44199 4L6.00005 6.55806L8.55811 4L9.44199 4.88388L6.00005 8.32582Z"
+                                                                        fill="#0D121F"
+                                                                    />
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+
+                                                    <button className="flex w-full items-center justify-center gap-x-3 rounded-[10px] bg-blue-600 py-4 text-white duration-200 hover:bg-blue-500">
+                                                        <span>
+                                                            <svg
+                                                                width="24"
+                                                                height="24"
+                                                                viewBox="0 0 24 24"
+                                                                fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                            >
+                                                                <path
+                                                                    d="M8.0625 10.3125L12 14.25L15.9375 10.3125"
+                                                                    fill="white"
+                                                                />
+                                                                <path
+                                                                    d="M8.0625 10.3125L12 14.25L15.9375 10.3125"
+                                                                    stroke="white"
+                                                                    strokeWidth="1.5"
+                                                                    strokeLinecap="round"
+                                                                    strokeLinejoin="round"
+                                                                />
+                                                                <path
+                                                                    d="M12 3.75V14.25"
+                                                                    stroke="white"
+                                                                    strokeWidth="1.5"
+                                                                    strokeLinecap="round"
+                                                                    strokeLinejoin="round"
+                                                                />
+                                                                <path
+                                                                    d="M20.25 14.25V19.5C20.25 19.6989 20.171 19.8897 20.0303 20.0303C19.8897 20.171 19.6989 20.25 19.5 20.25H4.5C4.30109 20.25 4.11032 20.171 3.96967 20.0303C3.82902 19.8897 3.75 19.6989 3.75 19.5V14.25"
+                                                                    stroke="white"
+                                                                    strokeWidth="1.5"
+                                                                    strokeLinecap="round"
+                                                                    strokeLinejoin="round"
+                                                                />
+                                                            </svg>
+                                                        </span>
+                                                        Deposit
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </Tab.Panel>
 
@@ -909,13 +993,97 @@ export default function Details() {
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div className="mt-8">
+                                                    <div className="space-y-4">
+                                                        <div className="mt-5 flex items-center justify-between rounded-xl border border-gray-300 bg-white px-5 py-3">
+                                                            <div className="flex items-center gap-x-2 font-medium leading-6 text-gray-900 lg:text-sm">
+                                                                <span>
+                                                                    <svg
+                                                                        width="18"
+                                                                        height="18"
+                                                                        viewBox="0 0 18 18"
+                                                                        fill="none"
+                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                    >
+                                                                        <path
+                                                                            fillRule="evenodd"
+                                                                            clipRule="evenodd"
+                                                                            d="M16.5 9C16.5 13.1421 13.1421 16.5 9 16.5C4.85786 16.5 1.5 13.1421 1.5 9C1.5 4.85786 4.85786 1.5 9 1.5C13.1421 1.5 16.5 4.85786 16.5 9ZM8.25 6.75V5.25H9.75V6.75H8.25ZM8.25 12.75V8.25H9.75V12.75H8.25Z"
+                                                                            fill="#0D121F"
+                                                                        />
+                                                                    </svg>
+                                                                </span>
+                                                                1 USDT = 1.00021 USDC
+                                                            </div>
+                                                            <button className="flex items-center gap-x-1.5 font-medium leading-6 text-gray-900 lg:text-sm">
+                                                                Advanced Setting
+                                                                <span>
+                                                                    <svg
+                                                                        width="12"
+                                                                        height="12"
+                                                                        viewBox="0 0 12 12"
+                                                                        fill="none"
+                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                    >
+                                                                        <path
+                                                                            fillRule="evenodd"
+                                                                            clipRule="evenodd"
+                                                                            d="M6.00005 8.32582L2.55811 4.88388L3.44199 4L6.00005 6.55806L8.55811 4L9.44199 4.88388L6.00005 8.32582Z"
+                                                                            fill="#0D121F"
+                                                                        />
+                                                                    </svg>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+
+                                                        <button className="flex w-full items-center justify-center gap-x-3 rounded-[10px] bg-blue-600 py-4 text-white duration-200 hover:bg-blue-500">
+                                                            <span>
+                                                                <svg
+                                                                    width="24"
+                                                                    height="24"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                >
+                                                                    <path
+                                                                        d="M8.0625 10.3125L12 14.25L15.9375 10.3125"
+                                                                        fill="white"
+                                                                    />
+                                                                    <path
+                                                                        d="M8.0625 10.3125L12 14.25L15.9375 10.3125"
+                                                                        stroke="white"
+                                                                        strokeWidth="1.5"
+                                                                        strokeLinecap="round"
+                                                                        strokeLinejoin="round"
+                                                                    />
+                                                                    <path
+                                                                        d="M12 3.75V14.25"
+                                                                        stroke="white"
+                                                                        strokeWidth="1.5"
+                                                                        strokeLinecap="round"
+                                                                        strokeLinejoin="round"
+                                                                    />
+                                                                    <path
+                                                                        d="M20.25 14.25V19.5C20.25 19.6989 20.171 19.8897 20.0303 20.0303C19.8897 20.171 19.6989 20.25 19.5 20.25H4.5C4.30109 20.25 4.11032 20.171 3.96967 20.0303C3.82902 19.8897 3.75 19.6989 3.75 19.5V14.25"
+                                                                        stroke="white"
+                                                                        strokeWidth="1.5"
+                                                                        strokeLinecap="round"
+                                                                        strokeLinejoin="round"
+                                                                    />
+                                                                </svg>
+                                                            </span>
+                                                            Withdraw
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
+
                                     </Tab.Panel>
                                 </Tab.Panels>
                             </Tab.Group>
 
-                            <div className="mt-8">
+                            {/* <div className="mt-8">
                                 <div className="space-y-4">
                                     <div className="mt-5 flex items-center justify-between rounded-xl border border-gray-300 bg-white px-5 py-3">
                                         <div className="flex items-center gap-x-2 font-medium leading-6 text-gray-900 lg:text-sm">
@@ -994,10 +1162,10 @@ export default function Details() {
                                                 />
                                             </svg>
                                         </span>
-                                        Deposit
+                                        Draw
                                     </button>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 
