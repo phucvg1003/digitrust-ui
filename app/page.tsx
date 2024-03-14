@@ -8,6 +8,7 @@ import Newsletter from "@/components/Newsletter";
 import Questions from "@/components/Questions";
 import Steps from "@/components/Steps";
 import Timeline from "@/components/Timeline";
+import dynamic from "next/dynamic";
 
 export default function Home() {
     return (
